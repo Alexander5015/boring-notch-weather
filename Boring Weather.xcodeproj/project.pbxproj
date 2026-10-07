@@ -3,42 +3,124 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 110;
+	objectVersion = 70;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AA01 /* BoringWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB01 /* BoringWeatherApp.swift */; };
+		AA02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB02 /* Assets.xcassets */; };
+		AA03 /* WeatherTab.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = BB03 /* WeatherTab.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AA04 /* NotchTabKit in Frameworks */ = {isa = PBXBuildFile; productRef = EE01 /* NotchTabKit */; };
+		AA05 /* NotchTabSettings in Frameworks */ = {isa = PBXBuildFile; productRef = EE02 /* NotchTabSettings */; };
+		AA0E /* WeatherPreviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F /* WeatherPreviews.swift */; };
+		AA16 /* NotchTabKit in Frameworks */ = {isa = PBXBuildFile; productRef = EE01 /* NotchTabKit */; };
+		AA17 /* NotchTabSettings in Frameworks */ = {isa = PBXBuildFile; productRef = EE02 /* NotchTabSettings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD11;
+			remoteInfo = WeatherTab;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CC01 /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				AA03 /* WeatherTab.appex in Embed ExtensionKit Extensions */,
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		11C0F35A3072BA6D00FF06B6 /* Boring Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Boring Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB01 /* BoringWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoringWeatherApp.swift; sourceTree = "<group>"; };
+		BB02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB03 /* WeatherTab.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WeatherTab.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB0F /* WeatherPreviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPreviews.swift; sourceTree = "<group>"; };
+		BB10 /* Boring Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Boring Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		11C0F35C3072BA6D00FF06B6 /* Boring Weather */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Boring Weather";
-			sourceTree = "<group>";
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		11DDAC6830754D4D00C6AD66 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				BoringNotchWeather.swift,
+				Info.plist,
+			);
+			target = DD10 /* Boring Weather */;
 		};
+		11DDAC6930754D4D00C6AD66 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = DD11 /* WeatherTab */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		11DDAC5930754D4C00C6AD66 /* WeatherTab */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (11DDAC6830754D4D00C6AD66 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 11DDAC6930754D4D00C6AD66 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = WeatherTab; sourceTree = "<group>"; };
+		11DDAC7730754DC100C6AD66 /* WeatherCore */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = WeatherCore; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		11C0F3573072BA6D00FF06B6 /* Frameworks */ = {
+		CC02 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
+				AA16 /* NotchTabKit in Frameworks */,
+				AA17 /* NotchTabSettings in Frameworks */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA04 /* NotchTabKit in Frameworks */,
+				AA05 /* NotchTabSettings in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		11C0F3513072BA6D00FF06B6 = {
+		9901 = {
 			isa = PBXGroup;
 			children = (
-				11C0F35C3072BA6D00FF06B6 /* Boring Weather */,
-				11C0F35B3072BA6D00FF06B6 /* Products */,
+				11DDAC7730754DC100C6AD66 /* WeatherCore */,
+				11DDAC5930754D4C00C6AD66 /* WeatherTab */,
+				9902 /* Boring Weather */,
+				9905 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		11C0F35B3072BA6D00FF06B6 /* Products */ = {
+		9902 /* Boring Weather */ = {
 			isa = PBXGroup;
 			children = (
-				11C0F35A3072BA6D00FF06B6 /* Boring Weather.app */,
+				BB01 /* BoringWeatherApp.swift */,
+				BB0F /* WeatherPreviews.swift */,
+				BB02 /* Assets.xcassets */,
+				BB05 /* Info.plist */,
+			);
+			path = "Boring Weather";
+			sourceTree = "<group>";
+		};
+		9905 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB10 /* Boring Weather.app */,
+				BB03 /* WeatherTab.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -46,274 +128,324 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		11C0F3593072BA6D00FF06B6 /* Boring Weather */ = {
+		DD10 /* Boring Weather */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 11C0F3653072BA6E00FF06B6 /* Build configuration list for PBXNativeTarget "Boring Weather" */;
+			buildConfigurationList = 9911 /* Build configuration list for PBXNativeTarget "Boring Weather" */;
 			buildPhases = (
-				11C0F3563072BA6D00FF06B6 /* Sources */,
-				11C0F3573072BA6D00FF06B6 /* Frameworks */,
-				11C0F3583072BA6D00FF06B6 /* Resources */,
+				CC04 /* Sources */,
+				CC02 /* Frameworks */,
+				CC05 /* Resources */,
+				CC01 /* Embed ExtensionKit Extensions */,
 			);
 			buildRules = (
 			);
+			dependencies = (
+				FF02 /* PBXTargetDependency */,
+			);
 			fileSystemSynchronizedGroups = (
-				11C0F35C3072BA6D00FF06B6 /* Boring Weather */,
+				11DDAC5930754D4C00C6AD66 /* WeatherTab */,
+				11DDAC7730754DC100C6AD66 /* WeatherCore */,
 			);
 			name = "Boring Weather";
+			packageProductDependencies = (
+				EE01 /* NotchTabKit */,
+				EE02 /* NotchTabSettings */,
+			);
 			productName = "Boring Weather";
-			productReference = 11C0F35A3072BA6D00FF06B6 /* Boring Weather.app */;
+			productReference = BB10 /* Boring Weather.app */;
 			productType = "com.apple.product-type.application";
+		};
+		DD11 /* WeatherTab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9912 /* Build configuration list for PBXNativeTarget "WeatherTab" */;
+			buildPhases = (
+				CC06 /* Sources */,
+				CC03 /* Frameworks */,
+				CC07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				11DDAC5930754D4C00C6AD66 /* WeatherTab */,
+				11DDAC7730754DC100C6AD66 /* WeatherCore */,
+			);
+			name = WeatherTab;
+			packageProductDependencies = (
+				EE01 /* NotchTabKit */,
+				EE02 /* NotchTabSettings */,
+			);
+			productName = WeatherTab;
+			productReference = BB03 /* WeatherTab.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		11C0F3523072BA6D00FF06B6 /* Project object */ = {
+		DD01 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2700;
 				LastUpgradeCheck = 2700;
 				TargetAttributes = {
-					11C0F3593072BA6D00FF06B6 = {
+					DD10 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					DD11 = {
 						CreatedOnToolsVersion = 27.0;
 					};
 				};
 			};
-			buildConfigurationList = 11C0F3553072BA6D00FF06B6 /* Build configuration list for PBXProject "Boring Weather" */;
+			buildConfigurationList = 9910 /* Build configuration list for PBXProject "Boring Weather" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 11C0F3513072BA6D00FF06B6;
-			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
-			productRefGroup = 11C0F35B3072BA6D00FF06B6 /* Products */;
+			mainGroup = 9901;
+			packageReferences = (
+				9920 /* XCLocalSwiftPackageReference "../BoringNotchExtensionKit" */,
+			);
+			productRefGroup = 9905 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				11C0F3593072BA6D00FF06B6 /* Boring Weather */,
+				DD10 /* Boring Weather */,
+				DD11 /* WeatherTab */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		11C0F3583072BA6D00FF06B6 /* Resources */ = {
+		CC05 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA02 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		11C0F3563072BA6D00FF06B6 /* Sources */ = {
+		CC04 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA01 /* BoringWeatherApp.swift in Sources */,
+				AA0E /* WeatherPreviews.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		FF02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD11 /* WeatherTab */;
+			targetProxy = FF01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		11C0F3633072BA6E00FF06B6 /* Debug configuration for PBXProject "Boring Weather" */ = {
+		9921 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 5FQ2HQT4L6;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
-		11C0F3643072BA6E00FF06B6 /* Release configuration for PBXProject "Boring Weather" */ = {
+		9922 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
+				DEVELOPMENT_TEAM = 5FQ2HQT4L6;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
-		11C0F3663072BA6E00FF06B6 /* Debug configuration for PBXNativeTarget "Boring Weather" */ = {
+		9923 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Boring Weather/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Boring Weather";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "theboringteam.Boring-Weather";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				REGISTER_APP_GROUPS = YES;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				PRODUCT_BUNDLE_IDENTIFIER = theboringteam.weather;
+				PRODUCT_NAME = "Boring Weather";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		11C0F3673072BA6E00FF06B6 /* Release configuration for PBXNativeTarget "Boring Weather" */ = {
+		9924 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Boring Weather/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Boring Weather";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "theboringteam.Boring-Weather";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				REGISTER_APP_GROUPS = YES;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				PRODUCT_BUNDLE_IDENTIFIER = theboringteam.weather;
+				PRODUCT_NAME = "Boring Weather";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		9925 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WeatherTab/WeatherTab.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = WeatherTab/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = theboringteam.weather.tab;
+				PRODUCT_NAME = WeatherTab;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		9926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WeatherTab/WeatherTab.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = WeatherTab/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = theboringteam.weather.tab;
+				PRODUCT_NAME = WeatherTab;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		11C0F3553072BA6D00FF06B6 /* Build configuration list for PBXProject "Boring Weather" */ = {
+		9910 /* Build configuration list for PBXProject "Boring Weather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				11C0F3633072BA6E00FF06B6 /* Debug configuration for PBXProject "Boring Weather" */,
-				11C0F3643072BA6E00FF06B6 /* Release configuration for PBXProject "Boring Weather" */,
+				9921 /* Debug */,
+				9922 /* Release */,
 			);
+			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		11C0F3653072BA6E00FF06B6 /* Build configuration list for PBXNativeTarget "Boring Weather" */ = {
+		9911 /* Build configuration list for PBXNativeTarget "Boring Weather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				11C0F3663072BA6E00FF06B6 /* Debug configuration for PBXNativeTarget "Boring Weather" */,
-				11C0F3673072BA6E00FF06B6 /* Release configuration for PBXNativeTarget "Boring Weather" */,
+				9923 /* Debug */,
+				9924 /* Release */,
 			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9912 /* Build configuration list for PBXNativeTarget "WeatherTab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9925 /* Debug */,
+				9926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		9920 /* XCLocalSwiftPackageReference "../BoringNotchExtensionKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../BoringNotchExtensionKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EE01 /* NotchTabKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NotchTabKit;
+		};
+		EE02 /* NotchTabSettings */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NotchTabSettings;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 11C0F3523072BA6D00FF06B6 /* Project object */;
-	validationLevel = 1;
+	rootObject = DD01 /* Project object */;
 }
